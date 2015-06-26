@@ -1,0 +1,28 @@
+{
+  "name": "rb-telegram-playground",
+  "version": "1.0.0",
+  "description": "Playing with telegram bot",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbusquet/rb-telegram-playground.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "api"
+  ],
+  "author": "Ricardo Busquet <ricardobusquet@gmail.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/rbusquet/rb-telegram-playground/issues"
+  },
+  "homepage": "https://github.com/rbusquet/rb-telegram-playground#readme",
+  "dependencies": {
+    "request": "^2.58.0"
+  }
+}
