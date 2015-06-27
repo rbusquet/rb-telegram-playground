@@ -1,10 +1,11 @@
 //var express = require('express');
 var fs = require('fs');
 var request = require('request');
+var routes = require('./routes')
+var actions = require('./actions');
+var express = require('express');
 
-var actions = require('./actions.js');
-
-var TELEGRAM_API_KEY = process.env.TELEGRAM_API_KEY || fs.readFileSync('telegram_api_key').toString();
+var TELEGRAM_API_KEY = process.env.TELEGRAM_API_KEY;
 
 var TELEGRAM_URL = 'https://api.telegram.org/bot' + TELEGRAM_API_KEY + '/';
 
@@ -86,3 +87,10 @@ request.post(apiCall("getMe"), function(error, response, body) {
 	main();
 });
 
+var app = express();
+
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});

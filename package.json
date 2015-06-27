@@ -4,7 +4,6 @@
   "description": "Playing with telegram bot",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
@@ -23,6 +22,7 @@
   },
   "homepage": "https://github.com/rbusquet/rb-telegram-playground#readme",
   "dependencies": {
+    "express": "^4.13.0",
     "request": "^2.58.0"
   }
 }
